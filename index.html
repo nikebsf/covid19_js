@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>Covid19 Stats</title>
 </head>
+
 <body>
+    <div style="text-align: center;  margin-top: 2em; margin-bottom: 2em;">
+        <button id="change_graph">View by States</button>
+        <a href="map.html" target="_blank">View map</a>
+        <!-- <button id="change_graph3">View By States</button> -->
+    </div>
+    <div id="chartContainer1" style="height: 400px; width: 100%;"></div>
     
+
+    <div class="statewise" >
+        <div id="chartContainer2" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer3" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer4" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer5" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer6" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer7" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer8" class="callout" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer9" class="callout" style="height: 400px; width: 100%;"></div>
+
+    </div>
+    
+    
+
+
+    <button class="open-button" id="btnopen">Virtual Assistant</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <!-- <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button> -->
+            <button type="button" class="btn cancel" id="btnclose">Close</button>
+        </form>
+    </div>
+
 </body>
 
 <script src="main.js"></script>
+<script src="chart2.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 </html>
